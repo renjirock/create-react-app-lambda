@@ -1,16 +1,50 @@
+import React, { Component } from "react"
+import "./App.css"
 import Navigation from './components/Navigation';
 import Masthead from './components/Masthead';
 import Form from './components/Form';
 
-function App() {
-  const login = localStorage.getItem("login");
-  return (
-    <div className="App" id="page-top">
-      <Navigation></Navigation>
-      {login === null ? <Masthead/> : ''}
-      {login === 'true' ? <Form/> : ''}
-    </div>
-  );
+
+class LambdaDemo extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { loading: false, msg: null }
+  }
+
+  handleClick = api => e => {
+    e.preventDefault()
+
+    this.setState({ loading: true })
+    fetch("/.netlify/functions/" + api)
+      .then(response => response.json())
+      .then(json => this.setState({ loading: false, msg: json.msg }))
+  }
+
+  render() {
+    const { loading, msg } = this.state
+
+    return (
+      <p>
+        <button onClick={this.handleClick("hello")}>{loading ? "Loading..." : "Call Lambda"}</button>
+        <button onClick={this.handleClick("async-dadjoke")}>{loading ? "Loading..." : "Call Async Lambda"}</button>
+        <br />
+        <span>{msg}</span>
+      </p>
+    )
+  }
 }
 
-export default App;
+class App extends Component {
+  render() {
+    const login = localStorage.getItem("login");
+    return (
+      <div className="App">
+        <Navigation></Navigation>
+        {login === null ? <Masthead/> : ''}
+        {login === 'true' ? <Form/> : ''}
+      </div>
+    )
+  }
+}
+
+export default App
