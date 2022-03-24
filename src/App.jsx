@@ -1,5 +1,4 @@
-import React, { Component } from "react"
-import "./App.css"
+import React, { Component } from "react";
 import Navigation from './components/Navigation';
 import Masthead from './components/Masthead';
 import Form from './components/Form';
