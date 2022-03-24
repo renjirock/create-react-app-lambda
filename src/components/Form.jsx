@@ -17,8 +17,10 @@ class Form extends React.Component {
                         <div class="col-md-6">
                             <label for="inputState" class="form-label">¿En qué sede asiste la mayoría del tiempo?</label>
                             <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
+                            <option selected>selecciona una...</option>
+                            <option>csu</option>
+                            <option>jardin</option>
+                            <option>salud</option>
                             </select>
                         </div>
                         <div class="col-12">
