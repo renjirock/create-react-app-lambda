@@ -31,7 +31,13 @@ class Form extends React.Component {
                             <label for="inputAddress2" class="form-label"> ¿A qué nivel pasa en inglés?</label>
                             <select id="inputState" class="form-select">
                                 <option selected>Choose...</option>
-                                <option>...</option>
+                                <option>A1</option>
+                                <option>A21</option>
+                                <option>A22</option>
+                                <option>B11</option>
+                                <option>B12</option>
+                                <option>B21</option>
+                                <option>B22</option>
                             </select>
                         </div>
                         <div class="col-12">
