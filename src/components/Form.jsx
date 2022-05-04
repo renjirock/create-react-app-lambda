@@ -8,7 +8,7 @@ class Form extends React.Component {
         <Fragment>
             <section class="page-section bg-dark text-white">
                 <div class="container px-4 px-lg-5 text-center">
-                    <h2 class="mb-4">Contesta la siguente encuesta</h2>
+                    <h2 class="mb-4">Contesta sa la siguente encuesta</h2>
                     <form class="row g-3">
                         <div class="col-md-6">
                             <label for="inputEmail4" class="form-label">Id del studiante</label>
@@ -30,7 +30,7 @@ class Form extends React.Component {
                         <div class="col-12">
                             <label for="inputAddress2" class="form-label"> ¿A qué nivel pasa en inglés?</label>
                             <select id="inputState" class="form-select">
-                                <option selected>Choose...</option>
+                                <option selected>selecciona una...</option>
                                 <option>A1</option>
                                 <option>A21</option>
                                 <option>A22</option>
