@@ -15,17 +15,17 @@ class Dashboard extends React.Component {
                                     className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 className="m-0 font-weight-bold text-primary">Estudiantes Registrados</h6>
                                     <div className="dropdown no-arrow">
-                                        <a className="dropdown-toggle"  role="button" id="dropdownMenuLink"
+                                        <button className="dropdown-toggle"  role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
+                                        </button>
                                         <div className="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                                             aria-labelledby="dropdownMenuLink">
                                             <div className="dropdown-header">Dropdown Header:</div>
-                                            <a className="dropdown-item" >Action</a>
-                                            <a className="dropdown-item" >Another action</a>
+                                            <button className="dropdown-item" >Action</button>
+                                            <button className="dropdown-item" >Another action</button>
                                             <div className="dropdown-divider"></div>
-                                            <a className="dropdown-item" >Something else here</a>
+                                            <button className="dropdown-item" >Something else here</button>
                                         </div>
                                     </div>
                                 </div>
@@ -42,17 +42,17 @@ class Dashboard extends React.Component {
                                     className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 className="m-0 font-weight-bold text-primary">Estudiantes por sede</h6>
                                     <div className="dropdown no-arrow">
-                                        <a className="dropdown-toggle"  role="button" id="dropdownMenuLink"
+                                        <button className="dropdown-toggle"  role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
+                                        </button>
                                         <div className="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                                             aria-labelledby="dropdownMenuLink">
                                             <div className="dropdown-header">Dropdown Header:</div>
-                                            <a className="dropdown-item" >Action</a>
-                                            <a className="dropdown-item" >Another action</a>
+                                            <button className="dropdown-item" >Action</button>
+                                            <button className="dropdown-item" >Another action</button>
                                             <div className="dropdown-divider"></div>
-                                            <a className="dropdown-item" >Something else here</a>
+                                            <button className="dropdown-item" >Something else here</button>
                                         </div>
                                     </div>
                                 </div>
@@ -139,12 +139,12 @@ class Dashboard extends React.Component {
                                         <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: "25rem"}}
                                             src="img/undraw_posting_photo.svg" alt="..."/>
                                     </div>
-                                    <p>Add some quality, svg illustrations to your project courtesy of <a
-                                            target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a
+                                    <p>Add some quality, svg illustrations to your project courtesy of <button
+                                            target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</button>, a
                                         constantly updated collection of beautiful svg images that you can use
                                         completely free and without attribution!</p>
-                                    <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
-                                        unDraw &rarr;</a>
+                                    <button target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
+                                        unDraw &rarr;</button>
                                 </div>
                             </div>
 
