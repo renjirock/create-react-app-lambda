@@ -70,9 +70,9 @@ class Dashboard extends React.Component {
                                 <div className="card-body">
                                     <div className="chart-pie pt-4 pb-2">
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style={{width: '15%'}} aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                                            <div class="progress-bar bg-success" role="progressbar" style={{width: "30%"}} aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                                            <div class="progress-bar bg-info" role="progressbar" style={{width: "55%"}} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" style={{width: (csu*100/students)+'%'}} aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-success" role="progressbar" style={{width: (jardin*100/students)+"%"}} aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-info" role="progressbar" style={{width: (salud*100/students)+"%"}} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <div className="mt-4 text-center small">
@@ -98,43 +98,43 @@ class Dashboard extends React.Component {
                                 </div>
                                 <div className="card-body">
                                     <h4 className="small font-weight-bold">A1 <span
-                                            className="float-right">20%</span></h4>
+                                            className="float-right">{(A1*100/students)}%</span></h4>
                                     <div className="progress mb-4">
                                         <div className="progress-bar bg-danger" role="progressbar" style={{width: (A1*100/students)+"20%"}}
                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">A21 <span
-                                            className="float-right">40%</span></h4>
+                                            className="float-right">{(A21*100/students)}%</span></h4>
                                     <div className="progress mb-4">
                                         <div className="progress-bar bg-warning" role="progressbar" style={{width: (A21*100/students)+"%"}}
                                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">A22 <span
-                                            className="float-right">60%</span></h4>
+                                            className="float-right">{(A22*100/students)}%</span></h4>
                                     <div className="progress mb-4">
                                         <div className="progress-bar" role="progressbar" style={{width: (A22*100/students)+"%"}}
                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">B11 <span
-                                            className="float-right">80%</span></h4>
+                                            className="float-right">{(B11*100/students)}%</span></h4>
                                     <div className="progress mb-4">
                                         <div className="progress-bar bg-info" role="progressbar" style={{width: (B11*100/students)+"%"}}
                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">B12 <span
-                                            className="float-right">80%</span></h4>
+                                            className="float-right">{B12*100/students}%</span></h4>
                                     <div className="progress mb-4">
                                         <div className="progress-bar bg-info" role="progressbar" style={{width: (B12*100/students)+"%"}}
                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">B21 <span
-                                            className="float-right">80%</span></h4>
+                                            className="float-right">{B21*100/students}%</span></h4>
                                     <div className="progress mb-4">
                                         <div className="progress-bar bg-info" role="progressbar" style={{width: (B21*100/students)+"%"}}
                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">B22 <span
-                                            className="float-right">Complete!</span></h4>
+                                            className="float-right">{B22*100/students}%</span></h4>
                                     <div className="progress">
                                         <div className="progress-bar bg-success" role="progressbar" style={{width: (B22*100/students)+"%"}}
                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
