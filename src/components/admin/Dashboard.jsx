@@ -2,7 +2,17 @@ import React, { Fragment } from "react";
 
 class Dashboard extends React.Component {
     render() {
-        const A1   = localStorage.getItem('A1');
+        const A1      = localStorage.getItem('A1') == null ? 0 : parseInt(localStorage.getItem('A1')) ;
+        const A21     = localStorage.getItem('A21') == null ? 0 : parseInt(localStorage.getItem('A21')) ;
+        const A22     = localStorage.getItem('A22') == null ? 0 : parseInt(localStorage.getItem('A22')) ;
+        const B11     = localStorage.getItem('B11') == null ? 0 : parseInt(localStorage.getItem('B11')) ;
+        const B12     = localStorage.getItem('B12') == null ? 0 : parseInt(localStorage.getItem('B12')) ;
+        const B21     = localStorage.getItem('B21') == null ? 0 : parseInt(localStorage.getItem('B21')) ;
+        const B22     = localStorage.getItem('B22') == null ? 0 : parseInt(localStorage.getItem('B22')) ;
+        const csu     = localStorage.getItem('csu') == null ? 0 : parseInt(localStorage.getItem('csu')) ;
+        const jardin  = localStorage.getItem('jardin') == null ? 0 : parseInt(localStorage.getItem('jardin')) ;
+        const salud   = localStorage.getItem('salud') == null ? 0 : parseInt(localStorage.getItem('salud')) ;
+        const students  = csu + jardin + salud;
         return (
             <Fragment>
                 <div className="container-fluid">
@@ -86,43 +96,43 @@ class Dashboard extends React.Component {
                                     <h4 className="small font-weight-bold">A1 <span
                                             className="float-right">20%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar bg-danger" role="progressbar" style={{width: "20%"}}
+                                        <div className="progress-bar bg-danger" role="progressbar" style={{width: (A1/students)+"20%"}}
                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">A21 <span
                                             className="float-right">40%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar bg-warning" role="progressbar" style={{width: "40%"}}
+                                        <div className="progress-bar bg-warning" role="progressbar" style={{width: (A21/students)+"%"}}
                                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">A22 <span
                                             className="float-right">60%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar" role="progressbar" style={{width: "60%"}}
+                                        <div className="progress-bar" role="progressbar" style={{width: (A22/students)+"%"}}
                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">B11 <span
                                             className="float-right">80%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar bg-info" role="progressbar" style={{width: A1+"%"}}
+                                        <div className="progress-bar bg-info" role="progressbar" style={{width: (B11/students)+"%"}}
                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">B12 <span
                                             className="float-right">80%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar bg-info" role="progressbar" style={{width: "80%"}}
+                                        <div className="progress-bar bg-info" role="progressbar" style={{width: (B12/students)+"%"}}
                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">B21 <span
                                             className="float-right">80%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar bg-info" role="progressbar" style={{width: "80%"}}
+                                        <div className="progress-bar bg-info" role="progressbar" style={{width: (B21/students)+"%"}}
                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">B22 <span
                                             className="float-right">Complete!</span></h4>
                                     <div className="progress">
-                                        <div className="progress-bar bg-success" role="progressbar" style={{width: "100%"}}
+                                        <div className="progress-bar bg-success" role="progressbar" style={{width: (B22/students)+"%"}}
                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
