@@ -80,7 +80,7 @@ class Dashboard extends React.Component {
                                             <i className="fas fa-circle text-primary"></i> Jardin
                                         </span>
                                         <span className="mr-2">
-                                            <i className="fas fa-circle text-success"></i> SCU
+                                            <i className="fas fa-circle text-success"></i> CSU
                                         </span>
                                         <span className="mr-2">
                                             <i className="fas fa-circle text-info"></i> Salud
