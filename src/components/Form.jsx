@@ -73,7 +73,9 @@ class Form extends React.Component {
                 alert('error')
                 break;
         }
+        console.log(inputState);
         console.log(localStorage.getItem(inputState));
+        console.log(inputLevel);
         console.log(localStorage.getItem(inputLevel));
         event.preventDefault();
     }
