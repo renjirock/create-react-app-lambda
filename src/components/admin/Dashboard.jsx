@@ -3,12 +3,6 @@ import React, { Fragment } from "react";
 class Dashboard extends React.Component {
     render() {
         const A1   = localStorage.getItem('A1');
-        const A21  = localStorage.getItem('A21');
-        const A22  = localStorage.getItem('A22');
-        const B11  = localStorage.getItem('B11');
-        const B12  = localStorage.getItem('B12');
-        const B21  = localStorage.getItem('B21');
-        const B22  = localStorage.getItem('B22');
         return (
             <Fragment>
                 <div className="container-fluid">
