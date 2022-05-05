@@ -44,7 +44,7 @@ class Form extends React.Component {
                         </div>
                         <div class="col-md-6">
                             <label for="inputState" class="form-label">¿En qué sede asiste la mayoría del tiempo?</label>
-                            <select id="inputState" name="inputState" value={this.state.value} class="form-select">
+                            <select id="inputState" name="inputState" value={this.state.value} onChange={this.handleChange} class="form-select">
                                 <option selected>selecciona una...</option>
                                 <option value={'csu'}>csu</option>
                                 <option value={'jardin'}>jardin</option>
@@ -53,11 +53,11 @@ class Form extends React.Component {
                         </div>
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">¿En qué comuna vive?</label>
-                            <input type="text" class="form-control" value={this.state.value} id="inputAddress" placeholder="1234 Main St"/>
+                            <input type="text" class="form-control" value={this.state.value} onChange={this.handleChange} id="inputAddress" placeholder="1234 Main St"/>
                         </div>
                         <div class="col-12">
                             <label for="inputLevel" class="form-label"> ¿A qué nivel pasa en inglés?</label>
-                            <select id="inputLevel" name="inputLevel" value={this.state.value} class="form-select">
+                            <select id="inputLevel" name="inputLevel" value={this.state.value} onChange={this.handleChange} class="form-select">
                                 <option selected>selecciona una...</option>
                                 <option value={'A1'}>A1</option>
                                 <option value={'A21'}>A21</option>
