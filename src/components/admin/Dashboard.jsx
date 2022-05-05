@@ -70,8 +70,8 @@ class Dashboard extends React.Component {
                                 <div className="card-body">
                                     <div className="chart-pie pt-4 pb-2">
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style={{width: (csu*100/students)+'%'}} aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                                            <div class="progress-bar bg-success" role="progressbar" style={{width: (jardin*100/students)+"%"}} aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" style={{width: (jardin*100/students)+'%'}} aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-success" role="progressbar" style={{width: (csu*100/students)+"%"}} aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                             <div class="progress-bar bg-info" role="progressbar" style={{width: (salud*100/students)+"%"}} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
