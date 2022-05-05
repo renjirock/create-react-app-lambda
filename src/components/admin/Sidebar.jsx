@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 
 class Sidebar extends React.Component {
     render() {
-        const login = localStorage.getItem("login");
         return (
             <Fragment>
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
