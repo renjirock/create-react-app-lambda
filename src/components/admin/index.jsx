@@ -8,11 +8,15 @@ class Index extends React.Component {
         return (
             <Fragment>
                 <div id="wrapper">
-                    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+                    <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
                         <Sidebar></Sidebar>
                     </ul>
-                    <Topbar></Topbar>
-                    <Dashboard></Dashboard>
+                    <div id="content-wrapper" className="d-flex flex-column">
+                        <div id="content">
+                            <Topbar></Topbar>
+                            <Dashboard></Dashboard>
+                        </div>
+                    </div>
                 </div>
             </Fragment>
         );
