@@ -1,6 +1,15 @@
 import React, { Fragment } from "react";
 
 class Topbar extends React.Component {
+    constructor(props) {
+        super(props);
+        this.handleSubmit = this.handleSubmit.bind(this);
+      }
+    handleSubmit(event) {
+        window.localStorage.removeItem('login');
+        window.location.href = '/';
+        event.preventDefault();
+    }
     render() {
         return (
             <Fragment>
@@ -61,7 +70,7 @@ class Topbar extends React.Component {
                                 Configuracion
                             </button>
                             <div className="dropdown-divider"></div>
-                            <button className="dropdown-item"  data-toggle="modal" data-target="#logoutModal">
+                            <button  className="dropdown-item" onClick={this.handleSubmit}>
                                 <i className="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Logout
                             </button>
