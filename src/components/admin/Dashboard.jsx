@@ -96,43 +96,43 @@ class Dashboard extends React.Component {
                                     <h4 className="small font-weight-bold">A1 <span
                                             className="float-right">20%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar bg-danger" role="progressbar" style={{width: (A1/students)+"20%"}}
+                                        <div className="progress-bar bg-danger" role="progressbar" style={{width: (A1*100/students)+"20%"}}
                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">A21 <span
                                             className="float-right">40%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar bg-warning" role="progressbar" style={{width: (A21/students)+"%"}}
+                                        <div className="progress-bar bg-warning" role="progressbar" style={{width: (A21*100/students)+"%"}}
                                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">A22 <span
                                             className="float-right">60%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar" role="progressbar" style={{width: (A22/students)+"%"}}
+                                        <div className="progress-bar" role="progressbar" style={{width: (A22*100/students)+"%"}}
                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">B11 <span
                                             className="float-right">80%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar bg-info" role="progressbar" style={{width: (B11/students)+"%"}}
+                                        <div className="progress-bar bg-info" role="progressbar" style={{width: (B11*100/students)+"%"}}
                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">B12 <span
                                             className="float-right">80%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar bg-info" role="progressbar" style={{width: (B12/students)+"%"}}
+                                        <div className="progress-bar bg-info" role="progressbar" style={{width: (B12*100/students)+"%"}}
                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">B21 <span
                                             className="float-right">80%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar bg-info" role="progressbar" style={{width: (B21/students)+"%"}}
+                                        <div className="progress-bar bg-info" role="progressbar" style={{width: (B21*100/students)+"%"}}
                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">B22 <span
                                             className="float-right">Complete!</span></h4>
                                     <div className="progress">
-                                        <div className="progress-bar bg-success" role="progressbar" style={{width: (B22/students)+"%"}}
+                                        <div className="progress-bar bg-success" role="progressbar" style={{width: (B22*100/students)+"%"}}
                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
