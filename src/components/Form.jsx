@@ -23,16 +23,16 @@ class Form extends React.Component {
     handleSubmit(event) {
         const inputState = this.state.inputState;
         const inputLevel = this.state.inputLevel;
-        const csu = parseInt(localStorage.getItem("csu"));
-        const jardin = parseInt(localStorage.getItem("jardin"));
-        const salud = parseInt(localStorage.getItem("salud"));
-        const A1 = parseInt(localStorage.getItem("A1"));
-        const A21 = parseInt(localStorage.getItem("A21"));
-        const A22 = parseInt(localStorage.getItem("A22"));
-        const B11 = parseInt(localStorage.getItem("B11"));
-        const B12 = parseInt(localStorage.getItem("B12"));
-        const B21 = parseInt(localStorage.getItem("B21"));
-        const B22 = parseInt(localStorage.getItem("B22"));
+        const csu = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("csu")) : 0;
+        const jardin = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("jardin")) : 0;
+        const salud = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("salud")) : 0;
+        const A1 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("A1")) : 0;
+        const A21 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("A21")) : 0;
+        const A22 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("A22")) : 0;
+        const B11 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("B11")) : 0;
+        const B12 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("B12")) : 0;
+        const B21 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("B21")) : 0;
+        const B22 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("B22")) : 0;
         switch (inputState) {
             case 'csu':
                 localStorage.setItem("csu", csu + 1);
