@@ -23,14 +23,10 @@ class Form extends React.Component {
     handleSubmit(event) {
         const inputState = this.state.inputState;
         const inputLevel = this.state.inputLevel;
-        const state = !isNaN(localStorage.getItem(inputState)) ? parseInt(localStorage.getItem(inputState)) : 0;
-        const level = !isNaN(localStorage.getItem(inputLevel)) ? parseInt(localStorage.getItem(inputLevel)) : 0;
+        const state = localStorage.getItem(inputState) !== null ? parseInt(localStorage.getItem(inputState)) : 0;
+        const level = localStorage.getItem(inputLevel) !== null ? parseInt(localStorage.getItem(inputLevel)) : 0;
         localStorage.setItem(inputState, state + 1);
         localStorage.setItem(inputLevel, level + 1);
-        console.log(inputState);
-        console.log(localStorage.getItem(inputState));
-        console.log(inputLevel);
-        console.log(localStorage.getItem(inputLevel));
         event.preventDefault();
     }
   render() {
