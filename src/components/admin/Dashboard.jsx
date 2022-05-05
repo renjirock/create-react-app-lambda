@@ -2,6 +2,13 @@ import React, { Fragment } from "react";
 
 class Dashboard extends React.Component {
     render() {
+        const A1   = localStorage.getItem('A1');
+        const A21  = localStorage.getItem('A21');
+        const A22  = localStorage.getItem('A22');
+        const B11  = localStorage.getItem('B11');
+        const B12  = localStorage.getItem('B12');
+        const B21  = localStorage.getItem('B21');
+        const B22  = localStorage.getItem('B22');
         return (
             <Fragment>
                 <div className="container-fluid">
@@ -103,7 +110,7 @@ class Dashboard extends React.Component {
                                     <h4 className="small font-weight-bold">B11 <span
                                             className="float-right">80%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar bg-info" role="progressbar" style={{width: "80%"}}
+                                        <div className="progress-bar bg-info" role="progressbar" style={{width: A1+"%"}}
                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">B12 <span
