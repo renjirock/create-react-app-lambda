@@ -23,56 +23,10 @@ class Form extends React.Component {
     handleSubmit(event) {
         const inputState = this.state.inputState;
         const inputLevel = this.state.inputLevel;
-        const csu = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("csu")) : 0;
-        const jardin = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("jardin")) : 0;
-        const salud = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("salud")) : 0;
-        const A1 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("A1")) : 0;
-        const A21 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("A21")) : 0;
-        const A22 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("A22")) : 0;
-        const B11 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("B11")) : 0;
-        const B12 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("B12")) : 0;
-        const B21 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("B21")) : 0;
-        const B22 = localStorage.getItem("csu") != null ? parseInt(localStorage.getItem("B22")) : 0;
-        switch (inputState) {
-            case 'csu':
-                localStorage.setItem("csu", csu + 1);
-                break;
-            case 'jardin':
-                localStorage.setItem("jardin", jardin + 1);
-                break;
-            case 'salud':
-                localStorage.setItem("salud", salud + 1);
-                break;
-            default:
-                alert('error')
-                break;
-        }
-        switch (inputLevel) {
-            case 'A1':
-                localStorage.setItem("A1", A1 + 1);
-                break;
-            case 'A21':
-                localStorage.setItem("A21", A21 + 1);
-                break;
-            case 'A22':
-                localStorage.setItem("A22", A22 + 1);
-                break;
-            case 'B11':
-                localStorage.setItem("B11", B11 + 1);
-                break;
-            case 'B12':
-                localStorage.setItem("B12", B12 + 1);
-                break;
-            case 'B21':
-                localStorage.setItem("B21", B21 + 1);
-                break;
-            case 'B22':
-                localStorage.setItem("B22", B22 + 1);
-                break;
-            default:
-                alert('error')
-                break;
-        }
+        const state = localStorage.getItem(inputState) != NaN ? parseInt(localStorage.getItem("csu")) : 0;
+        const level = localStorage.getItem(inputLevel) != NaN ? parseInt(localStorage.getItem("jardin")) : 0;
+        localStorage.setItem(inputState, state + 1);
+        localStorage.setItem(inputLevel, level + 1);
         console.log(inputState);
         console.log(localStorage.getItem(inputState));
         console.log(inputLevel);
