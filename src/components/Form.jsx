@@ -23,8 +23,8 @@ class Form extends React.Component {
     handleSubmit(event) {
         const inputState = this.state.inputState;
         const inputLevel = this.state.inputLevel;
-        const state = localStorage.getItem(inputState) !== NaN ? parseInt(localStorage.getItem("csu")) : 0;
-        const level = localStorage.getItem(inputLevel) !== NaN ? parseInt(localStorage.getItem("jardin")) : 0;
+        const state = isNaN(localStorage.getItem(inputState)) ? parseInt(localStorage.getItem("csu")) : 0;
+        const level = isNaN(localStorage.getItem(inputLevel)) ? parseInt(localStorage.getItem("jardin")) : 0;
         localStorage.setItem(inputState, state + 1);
         localStorage.setItem(inputLevel, level + 1);
         console.log(inputState);
