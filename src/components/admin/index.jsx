@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Sidebar from "./Sidebar";
 import Dashboard from "./Dashboard";
+import Topbar from "./Topbar";
 
 class Index extends React.Component {
     render() {
@@ -9,6 +10,7 @@ class Index extends React.Component {
                 <div id="wrapper">
                     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
                         <Sidebar></Sidebar>
+                        <Topbar></Topbar>
                     </ul>
                     <Dashboard></Dashboard>
                 </div>
