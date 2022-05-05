@@ -20,9 +20,11 @@ class Masthead extends React.Component {
         });
     }
     handleSubmit(event) {
-        if (
-            this.state.password === "123456"
-        ) {
+        if (this.state.password === "admin123" && this.state.studentId === 'admin') {
+            localStorage.setItem("login", 'admin');
+            localStorage.setItem("studentId", this.state.studentId);
+            window.location.href = "";
+        } else if (this.state.password === "123456") {
             localStorage.setItem("login", true);
             localStorage.setItem("studentId", this.state.studentId);
             window.location.href = "";

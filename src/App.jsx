@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navigation from './components/Navigation';
 import Masthead from './components/Masthead';
-//import Form from './components/Form';
+import Form from './components/Form';
 import Index from "./components/admin";
 
 
@@ -41,7 +41,8 @@ class App extends Component {
       <div className="App">
         {login === null || login === 'true' ? <Navigation/> : ''}
         {login === null ? <Masthead/> : ''}
-        {login === 'true' ? <Index/> : ''}
+        {login === 'true' ? <Form/> : ''}
+        {login === 'admin' ? <Index/> : ''}
       </div>
     )
   }
