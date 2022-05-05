@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navigation from './components/Navigation';
 import Masthead from './components/Masthead';
-import Form from './components/Form';
+//import Form from './components/Form';
 import Index from "./components/admin";
 
 
