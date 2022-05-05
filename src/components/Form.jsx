@@ -25,8 +25,8 @@ class Form extends React.Component {
         const inputLevel = this.state.inputLevel;
         const state = localStorage.getItem(inputState) == null ? 0 : parseInt(localStorage.getItem(inputState));
         const level = localStorage.getItem(inputLevel) == null ? 0 : parseInt(localStorage.getItem(inputLevel));
-        localStorage.setItem(inputState, state + 1);
-        localStorage.setItem(inputLevel, level + 1);
+        localStorage.setItem(inputState, state++);
+        localStorage.setItem(inputLevel, level++);
         console.log(localStorage.getItem(inputState));
         console.log(localStorage.getItem(inputLevel));
         event.preventDefault();
