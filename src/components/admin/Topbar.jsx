@@ -49,7 +49,7 @@ class Topbar extends React.Component {
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span className="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                             <img className="img-profile rounded-circle"
-                                src="src/img/undraw_profile.svg"/>
+                                src="src/img/undraw_profile.svg" alt="students"/>
                         </button>
                         <div className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                             aria-labelledby="userDropdown">
