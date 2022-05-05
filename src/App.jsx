@@ -39,7 +39,7 @@ class App extends Component {
     const login = localStorage.getItem("login");
     return (
       <div className="App">
-        <Navigation></Navigation>
+        {login === null || login === 'true' ? <Navigation/> : ''}
         {login === null ? <Masthead/> : ''}
         {login === 'true' ? <Index/> : ''}
       </div>
