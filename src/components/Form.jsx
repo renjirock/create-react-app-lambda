@@ -21,12 +21,60 @@ class Form extends React.Component {
         });
     }
     handleSubmit(event) {
-        localStorage.setItem("inputState", this.state.inputState);
-        localStorage.setItem("inputAddress", this.state.inputAddress);
-        localStorage.setItem("inputLevel", this.state.inputLevel);
-        console.log(this.state.inputState);
-        console.log(this.state.inputAddress);
-        console.log(this.state.inputLevel);
+        const inputState = this.state.inputState;
+        const inputLevel = this.state.inputLevel;
+        const csu = parseInt(localStorage.getItem("csu"));
+        const jardin = parseInt(localStorage.getItem("jardin"));
+        const salud = parseInt(localStorage.getItem("salud"));
+        const A1 = parseInt(localStorage.getItem("A1"));
+        const A21 = parseInt(localStorage.getItem("A21"));
+        const A22 = parseInt(localStorage.getItem("A22"));
+        const B11 = parseInt(localStorage.getItem("B11"));
+        const B12 = parseInt(localStorage.getItem("B12"));
+        const B21 = parseInt(localStorage.getItem("B21"));
+        const B22 = parseInt(localStorage.getItem("B22"));
+        switch (inputState) {
+            case 'csu':
+                localStorage.setItem("csu", csu + 1);
+                break;
+            case 'jardin':
+                localStorage.setItem("jardin", jardin + 1);
+                break;
+            case 'salud':
+                localStorage.setItem("salud", salud + 1);
+                break;
+            default:
+                alert('error')
+                break;
+        }
+        switch (inputLevel) {
+            case 'A1':
+                localStorage.setItem("A1", A1 + 1);
+                break;
+            case 'A21':
+                localStorage.setItem("A21", A21 + 1);
+                break;
+            case 'A22':
+                localStorage.setItem("A22", A22 + 1);
+                break;
+            case 'B11':
+                localStorage.setItem("B11", B11 + 1);
+                break;
+            case 'B12':
+                localStorage.setItem("B12", B12 + 1);
+                break;
+            case 'B21':
+                localStorage.setItem("B21", B21 + 1);
+                break;
+            case 'B22':
+                localStorage.setItem("B22", B22 + 1);
+                break;
+            default:
+                alert('error')
+                break;
+        }
+        console.log(localStorage.getItem(inputState));
+        console.log(localStorage.getItem(inputLevel));
         event.preventDefault();
     }
   render() {
@@ -36,7 +84,7 @@ class Form extends React.Component {
         <Fragment>
             <section class="page-section bg-dark text-white">
                 <div class="container px-4 px-lg-5 text-center">
-                    <h2 class="mb-4">Contesta sa la siguente encuesta</h2>
+                    <h2 class="mb-4">Contesta la siguente encuesta</h2>
                     <form class="row g-3" onSubmit={this.handleSubmit}>
                         <div class="col-md-6">
                             <label for="staticEmail" class="form-label">Id del studiante</label>
@@ -53,7 +101,7 @@ class Form extends React.Component {
                         </div>
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">¿En qué comuna vive?</label>
-                            <input type="text" class="form-control" value={this.state.value} onChange={this.handleChange} id="inputAddress" placeholder="1234 Main St"/>
+                            <input type="text" class="form-control" value={this.state.value} onChange={this.handleChange} id="inputAddress" name="inputAddress" placeholder="1234 Main St"/>
                         </div>
                         <div class="col-12">
                             <label for="inputLevel" class="form-label"> ¿A qué nivel pasa en inglés?</label>
