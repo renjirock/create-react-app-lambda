@@ -100,7 +100,7 @@ class Dashboard extends React.Component {
                                     <h4 className="small font-weight-bold">A1 <span
                                             className="float-right">{(A1*100/students)}%</span></h4>
                                     <div className="progress mb-4">
-                                        <div className="progress-bar bg-danger" role="progressbar" style={{width: (A1*100/students)+"20%"}}
+                                        <div className="progress-bar bg-danger" role="progressbar" style={{width: (A1*100/students)+"%"}}
                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 className="small font-weight-bold">A21 <span
