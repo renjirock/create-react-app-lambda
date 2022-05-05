@@ -15,17 +15,17 @@ class Dashboard extends React.Component {
                                     className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 className="m-0 font-weight-bold text-primary">Estudiantes Registrados</h6>
                                     <div className="dropdown no-arrow">
-                                        <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        <a className="dropdown-toggle"  role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                                             aria-labelledby="dropdownMenuLink">
                                             <div className="dropdown-header">Dropdown Header:</div>
-                                            <a className="dropdown-item" href="#">Action</a>
-                                            <a className="dropdown-item" href="#">Another action</a>
+                                            <a className="dropdown-item" >Action</a>
+                                            <a className="dropdown-item" >Another action</a>
                                             <div className="dropdown-divider"></div>
-                                            <a className="dropdown-item" href="#">Something else here</a>
+                                            <a className="dropdown-item" >Something else here</a>
                                         </div>
                                     </div>
                                 </div>
@@ -42,17 +42,17 @@ class Dashboard extends React.Component {
                                     className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 className="m-0 font-weight-bold text-primary">Estudiantes por sede</h6>
                                     <div className="dropdown no-arrow">
-                                        <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        <a className="dropdown-toggle"  role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                                             aria-labelledby="dropdownMenuLink">
                                             <div className="dropdown-header">Dropdown Header:</div>
-                                            <a className="dropdown-item" href="#">Action</a>
-                                            <a className="dropdown-item" href="#">Another action</a>
+                                            <a className="dropdown-item" >Action</a>
+                                            <a className="dropdown-item" >Another action</a>
                                             <div className="dropdown-divider"></div>
-                                            <a className="dropdown-item" href="#">Something else here</a>
+                                            <a className="dropdown-item" >Something else here</a>
                                         </div>
                                     </div>
                                 </div>
