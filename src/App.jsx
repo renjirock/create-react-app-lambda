@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navigation from './components/Navigation';
 import Masthead from './components/Masthead';
 import Form from './components/Form';
+import Index from "./components/admin";
 
 
 // class LambdaDemo extends Component {
@@ -40,7 +41,7 @@ class App extends Component {
       <div className="App">
         <Navigation></Navigation>
         {login === null ? <Masthead/> : ''}
-        {login === 'true' ? <Form/> : ''}
+        {login === 'true' ? <Index/> : ''}
       </div>
     )
   }
