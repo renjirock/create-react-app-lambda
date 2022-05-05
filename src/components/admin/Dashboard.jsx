@@ -15,7 +15,7 @@ class Dashboard extends React.Component {
                                     className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 className="m-0 font-weight-bold text-primary">Estudiantes Registrados</h6>
                                     <div className="dropdown no-arrow">
-                                        <button className="dropdown-toggle"  role="button" id="dropdownMenuLink"
+                                        <button className="dropdown-toggle" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                                         </button>
@@ -42,7 +42,7 @@ class Dashboard extends React.Component {
                                     className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 className="m-0 font-weight-bold text-primary">Estudiantes por sede</h6>
                                     <div className="dropdown no-arrow">
-                                        <button className="dropdown-toggle"  role="button" id="dropdownMenuLink"
+                                        <button className="dropdown-toggle"  id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                                         </button>
