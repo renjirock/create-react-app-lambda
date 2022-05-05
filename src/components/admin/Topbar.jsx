@@ -23,7 +23,7 @@ class Topbar extends React.Component {
                 </form>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item dropdown no-arrow d-sm-none">
-                        <button className="nav-link dropdown-toggle"  id="searchDropdown" role="button"
+                        <button className="nav-link dropdown-toggle"  id="searchDropdown" 
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i className="fas fa-search fa-fw"></i>
                         </button>
@@ -45,7 +45,7 @@ class Topbar extends React.Component {
                     </li>
                     <div className="topbar-divider d-none d-sm-block"></div>
                     <li className="nav-item dropdown no-arrow">
-                        <button className="nav-link dropdown-toggle"  id="userDropdown" role="button"
+                        <button className="nav-link dropdown-toggle"  id="userDropdown" 
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span className="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                             <img className="img-profile rounded-circle"
